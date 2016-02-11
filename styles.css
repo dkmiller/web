@@ -101,6 +101,13 @@ html, body {
 }
 .mdl-demo #add {
   position: absolute;
+  right: 120px;
+  top: 36px;
+  z-index: 999;
+}
+
+.mdl-demo #git {
+  position: absolute;
   right: 40px;
   top: 36px;
   z-index: 999;
