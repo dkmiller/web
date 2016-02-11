@@ -1,0 +1,217 @@
+<!doctype html>
+<!--
+Material Design Lite
+Copyright 2015 Google Inc. All rights reserved.
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    https://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License
+-->
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="Daniel Miller's home page at Cornell.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Daniel Miller | Cornell</title>
+
+  <link rel="shortcut icon" href="images/favicon.ico">
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://code.getmdl.io/1.1.1/material.red-blue.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    #view-source {
+      position: fixed;
+      display: block;
+      right: 0;
+      bottom: 0;
+      margin-right: 40px;
+      margin-bottom: 40px;
+      z-index: 900;
+    }
+  </style>
+</head>
+<body class="mdl-demo mdl-color--grey-100 mdl-color-text--grey-700 mdl-base">
+  <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+    <header class="mdl-layout__header mdl-layout__header--scroll mdl-color--primary">
+      <div class="mdl-layout--large-screen-only mdl-layout__header-row">
+      </div>
+      <div class="mdl-layout--large-screen-only mdl-layout__header-row">
+        <h3>Daniel Miller, Cornell Mathematics</h3>
+      </div>
+      <div class="mdl-layout--large-screen-only mdl-layout__header-row">
+      </div>
+      <div class="mdl-layout__tab-bar mdl-js-ripple-effect mdl-color--primary-dark">
+        <a href="#home" class="mdl-layout__tab is-active">Home</a>
+        <a href="#teach" class="mdl-layout__tab">Teaching</a>
+        <a href="#cv" class="mdl-layout__tab">CV</a>
+        <a href="#notes" class="mdl-layout__tab">Notes</a>
+        <a href="#sga" class="mdl-layout__tab">SGA</a>
+        <a href="#misc" class="mdl-layout__tab">Miscellaneous</a>
+        <button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored mdl-shadow--4dp mdl-color--accent" id="add">
+          <i class="material-icons" role="presentation">send</i>
+          <span class="visuallyhidden">Add</span>
+        </button>
+      </div>
+    </header>
+    <main class="mdl-layout__content">
+
+      <!--Home page-->
+      <div class="mdl-layout__tab-panel is-active" id="home">
+        <!-- my photo -->
+        <section class="section--center mdl-grid mdl-grid--no-spacing">
+          <div class="demo-card-image mdl-card mdl-shadow--2dp"></div>
+        </section>
+        <section class="section--center mdl-grid mdl-grid--no-spacing">
+          <div class="mdl-cell mdl-cell--12-col">
+            <h4>About me</h4>
+            I'm a fourth-year PhD student working under <a href="mailto:ravi@math.cornell.edu">Ravi Ramakrishna</a>. Mathematically, I work in algebraic number theory and arithmetic statistics. More specifically, take an elliptic curve <i>E</i>/<b>Q</b>. I'm interested in the interaction between the Galois representation arising from <i>E</i> (in particular, its trace, which counts the number of <b>F</b><sub><i>p</i></sub>-valued points of <i>E</i>) and the statistics of symmetric powers of its Satake parameters. I am also interested in time and location-centric applications of Cloud Computing. 
+          </div>
+        </section>
+      </div>
+
+      <!--Teaching page-->
+      <div class="mdl-layout__tab-panel" id="teach">
+        <section class="section--center mdl-grid mdl-grid--no-spacing">
+          <div class="mdl-cell mdl-cell--12-col">
+            <h4>Spring 2016</h4>
+            For the Spring of 2016, I am Czar's Assistant for MATH 1110: Calculus I and MATH 1120: Calculus II, under Kelly Delp and Marcelo Aguiar, respectively.
+          </div>
+        </section>
+      </div>
+
+      <!--CV page-->
+      <div class="mdl-layout__tab-panel" id="cv">
+
+        <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+          <div class="mdl-card mdl-cell mdl-cell--12-col">
+            <div class="mdl-card__supporting-text">
+              <h4>Education</h4>
+              <p><b>Cornell University:</b> PhD in Mathematics, expected May 2017</p>
+              <p><b>Cornell University:</b> Master's in Computer Science, expected May 2017</p>
+              <p><b>University of Nebraska at Omaha:</b> BA in mathematics, August 2012. Graduated <i>summa cum laude</i> with highest honors in mathematics.</p>
+            </div>
+            <div class="mdl-card__actions">
+              <a href="../bin/miller-cv.pdf" class="mdl-button">PDF version of my CV</a>
+            </div>
+          </div>
+        </section>
+
+        <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+          <div class="mdl-card mdl-cell mdl-cell--12-col">
+            <div class="mdl-card__supporting-text">
+              <h4>Publications</h4>
+              <p>C. Kelleher, D. Miller, T. Osborn, A. Weston. <a href="../bin/non-embed.pdf"><i>Strongly non-embeddable metric spaces.</i></a> Topology Appl. <b>159</b> (2012), no.3, 749-755.</p>
+              <p>C. Kelleher, D. Miller, T. Osborn, A. Weston. <a href="../bin/polygonal-equalities.pdf"><i>Polygonal equalities and virtual degeneracy in L<sub>p</sub> spaces</i></a>, <i>J. Math. Anal. Appl.</i> <b>415</b> (2014), no.1, 247-268.</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+          <div class="mdl-card mdl-cell mdl-cell--12-col">
+            <div class="mdl-card__supporting-text">
+              <h4>Conference Talks</h4>
+              <p><a href="bin/modular-curve.pdf">Modular curves of infinite level [after Jared Weinstein]</a>, Upstate New York Number Theory Conference, Binghamton University. (April 2013)</p>
+              <p><a href="bin/Miller_perfectoid.pdf">Perfectoid spaces</a>, Ramification and Hopf-Galois module theory, University of Nebraska-Omaha. (May 2013)</p>
+              <p><a href="bin/selmer-isotropic.pdf">Average ranks of Selmer groups and maximal isotropic subspaces [after Bjorn Poonen]</a>, Upstate New York Number Theory Conference, SUNY Buffalo. (April 2014)</p>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <!--Notes page-->
+      <div class="mdl-layout__tab-panel" id="notes">
+
+        <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+          <div class="mdl-card mdl-cell mdl-cell--12-col">
+            <div class="mdl-card__supporting-text">
+              <h4>Education</h4>
+              <p><b>Cornell University:</b> PhD in Mathematics, expected May 2017</p>
+              <p><b>Cornell University:</b> Master's in Computer Science, expected May 2017</p>
+              <p><b>University of Nebraska at Omaha:</b> BA in mathematics, August 2012. Graduated <i>summa cum laude</i> with highest honors in mathematics.</p>
+            </div>
+            <div class="mdl-card__actions">
+              <a href="../bin/miller-cv.pdf" class="mdl-button">PDF version of my CV</a>
+            </div>
+          </div>
+        </section>
+
+        <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+          <div class="mdl-card mdl-cell mdl-cell--12-col">
+            <div class="mdl-card__supporting-text">
+              <h4>Publications</h4>
+              <p>C. Kelleher, D. Miller, T. Osborn, A. Weston. <a href="../bin/non-embed.pdf"><i>Strongly non-embeddable metric spaces.</i></a> Topology Appl. <b>159</b> (2012), no.3, 749-755.</p>
+              <p>C. Kelleher, D. Miller, T. Osborn, A. Weston. <a href="../bin/polygonal-equalities.pdf"><i>Polygonal equalities and virtual degeneracy in L<sub>p</sub> spaces</i></a>, <i>J. Math. Anal. Appl.</i> <b>415</b> (2014), no.1, 247-268.</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+          <div class="mdl-card mdl-cell mdl-cell--12-col">
+            <div class="mdl-card__supporting-text">
+              <h4>Conference Talks</h4>
+              <p><a href="../bin/modular-curve.pdf">Modular curves of infinite level [after Jared Weinstein]</a>, Upstate New York Number Theory Conference, Binghamton University. (April 2013)</p>
+              <p><i>Perfectoid spaces</i>, Ramification and Hopf-Galois module theory, University of Nebraska-Omaha. (May 2013)</p>
+              <p><i>Average ranks of Selmer groups and maximal isotropic subspaces [after Bjorn Poonen]</i>, Upstate New York Number Theory Conference, SUNY Buffalo. (April 2014)</p>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <!--SGA page-->
+      <div class="mdl-layout__tab-panel" id="sga">
+        <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+            <div class="mdl-card mdl-cell mdl-cell--12-col">
+              <div class="mdl-card__supporting-text">
+              <p>It is an unfortunate fact that the copies of SGA in most university libraries are the old Springer versions, which are not exactly paragons of typesetting. Fortunately, the first four volumes of SGA have been typeset using LaTeX. To the best of my knowledge, only the first volume is widely known about, and the typeset version of SGA 4 is difficult to find. All parts of SGA included here have had a digital table of contents added via <a href="http://sourceforge.net/projects/jpdfbookmarks/">JPdfBookmarks</a>. Hopefully it will be useful to the mathematical community to have all typeset volumes of SGA in one place. <i>Important note:</i> I didn't create any of these TeX versions except SGA 4.5.</p>
+              <ul>
+                <li><a href="../bin/sga1.pdf">SGA 1</a>, and its <a href="http://arxiv.org/abs/math/0206203">page on the arXiv</a></li>
+                <li><a href="../bin/sga2.pdf">SGA 2</a>, and its <a href="http://arxiv.org/abs/math/0511279">page on the arXiv</a></li>
+                <li>SGA 3, <a href="../bin/sga3-1.pdf">volume 1</a>, <a href="../bin/sga3-2.pdf">volume 2</a>, and <a href="../bin/sga3-3.pdf">volume 3</a>. These can be found at Patrick Polo's <a href="http://www.math.jussieu.fr/~polo/SGA3/">webpage</a>, but only in individual sections. I used <a href="http://www.pdflabs.com/tools/pdftk-the-pdf-toolkit/">PDFtk</a> to compile the separate sections into a single pdf.</li>
+                <li>SGA 4, <a href="../bin/sga4-1.pdf">volume 1</a>, <a href="../bin/sga4-2.pdf">volume 2</a>, and <a href="../bin/sga4-3.pdf">volume 3</a>. I found them <a href="http://sage.math.washington.edu/home/wstein/www/home/craigcitro/sga4/Grothendieck/SGA4/">here</a>. (Note: even though volume 3 is titled "tome 1," it actually is volume 3. While the source code can be found e.g. <a href="http://www.math.polytechnique.fr/~laszlo/sga4/SGA4-1/sga4_exp1.tex">here</a>, I haven't tried recompiling it with the correct title. It looks Yves Laszlo is working on SGA 4, c.f. <a href="http://www.math.u-psud.fr/~laszlo/sga4.html">this page</a>.</li>
+                <li><a href="../bin/sga4.5.pdf">SGA 4&frac12;</a>. While the initial typesetting process is complete, there are still many typos. Feedback is welcome, and if you would like to help with the editing process, its GitHub page is <a href="https://github.com/dkmiller/sga4.5">here</a>.</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <!--Miscellaneous page-->
+      <div class="mdl-layout__tab-panel" id="misc">
+      <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+          <div class="mdl-card mdl-cell mdl-cell--12-col">
+            <div class="mdl-card__supporting-text">
+              <p>All of the grad students at Cornell (and, no doubt, elsewhere) are routinely spammed with paper-requests from bogus journals. When <a href="https://www.lap-publishing.com/">LAP Lambert</a> sent me such an email, I responded with a paper created by <a href="http://thatsmathematics.com/mathgen/">mathgen</a>. It is a testament to the lack of human interaction (on LAP's end) with the paper that it was published - absurd summary and all. You used to be able to <a href="http://www.amazon.com/uniqueness-Liouville-singular-Artinian-triangles/dp/3659500313">buy it on Amazon</a>, but it appears to be out of print.</p>
+              <p><a href="../bin/emerton-roadmap.pdf">Here</a> is a fantastic road map for learning arithmetic geometry, by Matthew Emerton.</p>
+              <p>On <a href="http://www.quora.com/Mathematics/What-is-it-like-to-understand-advanced-mathematics">Quora</a>, an anonymous user wrote a very nice summary (for non-mathematicians) on what it is like to understand advanced mathematics. I took the liberty of <a href="../bin/understand-math.pdf">TeXing the answer</a>.</p>
+              <p>The math department webmail can be accessed <a href="https://recursion.math.cornell.edu/cgi-bin/openwebmail/openwebmail.pl">here</a>.</p>
+              <p>I got annoyed enough at the lack of add-free printable lined paper that I took someone's (I can't remember who) TeX file and modified it slightly. You may find my PDF <a href="../bin/lined-paper.pdf">here</a></p>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <footer class="mdl-mega-footer">
+        <div class="mdl-mega-footer--bottom-section">
+          <div class="mdl-logo">
+            &copy; Daniel Miller 2016
+          </div>
+        </div>
+      </footer>
+
+    </main>
+  </div>
+  
+  <script src="https://code.getmdl.io/1.1.1/material.min.js"></script>
+</body>
+</html>
